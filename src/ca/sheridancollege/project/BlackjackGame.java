@@ -7,7 +7,7 @@ package ca.sheridancollege.project;
 import java.util.Scanner;
 
 /**
- * Implements the game logic for Blackjack.
+ * @author Yash Patel
  */
 public class BlackjackGame extends Game {
     private BlackjackDeck deck;
@@ -24,17 +24,14 @@ public class BlackjackGame extends Game {
         player = new BlackjackPlayer("Player");
         dealer = new BlackjackPlayer("Dealer");
 
-        // Initial two cards for both players
         player.addCard(deck.drawCard());
         player.addCard(deck.drawCard());
         dealer.addCard(deck.drawCard());
         dealer.addCard(deck.drawCard());
 
-        // Show initial hands
         player.showHand();
         System.out.println("Dealer's first card: " + dealer.getScore());
 
-        // Player's turn
         while (player.getScore() < 21) {
             System.out.print("Hit or Stand? (h/s): ");
             String choice = scanner.next();
@@ -46,13 +43,11 @@ public class BlackjackGame extends Game {
             }
         }
 
-        // Dealer's turn
         while (dealer.getScore() < 17) {
             dealer.addCard(deck.drawCard());
         }
         dealer.showHand();
 
-        // Determine the winner
         declareWinner();
     }
 
@@ -74,4 +69,3 @@ public class BlackjackGame extends Game {
         }
     }
 }
-

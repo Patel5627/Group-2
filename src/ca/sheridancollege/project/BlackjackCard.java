@@ -5,7 +5,7 @@
 package ca.sheridancollege.project;
 
 /**
- * Represents a playing card in Blackjack.
+ * @author Yash Patel
  */
 public class BlackjackCard extends Card {
     private String suit;

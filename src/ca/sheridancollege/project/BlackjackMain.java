@@ -5,7 +5,7 @@
 package ca.sheridancollege.project;
 
 /**
- * Main class to run the Blackjack game.
+ * @author Yash
  */
 public class BlackjackMain {
     public static void main(String[] args) {

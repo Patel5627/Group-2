@@ -4,15 +4,14 @@
  */
 package ca.sheridancollege.project;
 
-import java.util.ArrayList;
+
 
 /**
- * Represents a deck of 52 playing cards for Blackjack.
+ * @author Yash Patel
  */
 public class BlackjackDeck extends GroupOfCards {
     public BlackjackDeck() {
         super(52);
-        this.cards = new ArrayList<>();  // Initialize the list
 
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};

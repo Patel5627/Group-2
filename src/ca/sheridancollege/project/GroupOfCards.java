@@ -9,15 +9,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Represents a group of cards for a game.
+ * @author Yash
  */
 public class GroupOfCards {
-    protected ArrayList<Card> cards;  // Change from private to protected
+    protected ArrayList<Card> cards;
     private int size;
 
     public GroupOfCards(int size) {
         this.size = size;
-        this.cards = new ArrayList<>();  // Ensure cards is initialized
+        this.cards = new ArrayList<>();
     }
 
     public ArrayList<Card> getCards() {

@@ -7,7 +7,7 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
- * Represents a player in the Blackjack game.
+ * @author Yash
  */
 public class BlackjackPlayer extends Player {
     private ArrayList<BlackjackCard> hand;
@@ -37,4 +37,3 @@ public class BlackjackPlayer extends Player {
         // Player logic handled in game class
     }
 }
-
